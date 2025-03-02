@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form action="" id="search-form">
+          <input
+            type="search"
+            class="search-input"
+            id="search-input"
+            placeholder="Enter a city. . ."
+            required
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city">New York</h1>
+            <p class="current-details">
+              <span class="current-details" id="current-date"></span>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span>
+            <span class="current-temperature-value">24</span>
+            <span class="current-temperature-unit">°C</span>
+            <p class="current-weather-condition">Mostly Cloudy</p>
+            <div class="humidity-windSpeed">
+              <span class="current-humidity"
+                >Humidity <br />
+                69%</span
+              >
+              <span class="current-windSpeed"
+                >Wind <br />
+                7.2km/h</span
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/SIPHUMELELE22" target="_blank">
+            Siphumelele Makatisa</a
+          >
+          and is on
+          <a href="#" target="_blank"> GitHub</a> and is hosted on
+          <a href="#" target="_blank"> Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
