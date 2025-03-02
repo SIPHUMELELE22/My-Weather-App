@@ -1,0 +1,100 @@
+body {
+  background: #f9f7fe;
+}
+a {
+  color: lightblue;
+}
+.weather-app {
+  background: linear-gradient(
+    112.1deg,
+    rgb(77, 238, 253) 0.7%,
+    rgb(3, 151, 232) 26.1%,
+    rgb(47, 31, 116) 95.7%
+  );
+  max-width: 600px;
+  display: block;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+.search-input {
+  background: #ace2e1;
+  color: gray;
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  width: 75%;
+  border-radius: 25px;
+}
+.search-button {
+  background: #ace2e1;
+  color: gray;
+  margin-left: 5px;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  line-height: 1;
+  border-radius: 25px;
+}
+main {
+  padding: 30px 0;
+}
+.current-weather {
+  text-align: center;
+}
+.current-city {
+  font-size: 48px;
+  color: white;
+}
+.current-details {
+  font-size: 20px;
+  color: #3c3d37;
+  line-height: 1;
+}
+.current-temperature {
+  font-size: 48px;
+}
+.current-temperature-icon {
+  font-size: 40px;
+}
+.current-temperature-icon img {
+  display: block;
+  margin: 0 auto;
+}
+.current-temperature-value {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+.current-temperature-unit {
+  font-size: 28px;
+  position: relative;
+  top: -38px;
+  color: white;
+  right: 18px;
+}
+.current-weather-condition {
+  font-size: 28px;
+  color: white;
+}
+.humidity-windSpeed {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+}
+.humidity-windSpeed span {
+  padding: 10px;
+  font-size: 20px;
+  color: blue;
+  background: #ace2e1;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+.humidity-windSpeed span strong {
+  color: #f9f7fe;
+  font-size: 30px;
+}
