@@ -1,11 +1,11 @@
 function handleSearch(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
-  searchInput(searchInput.value);
+  search(searchInput.value);
 }
 function search(city) {
   let apiKey = "a8410f837a6231f43oc1a1t6c91926bb";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${searchInput.value}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -50,7 +50,6 @@ function displayTemperature(response) {
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
-  let day = date.getDay();
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -68,6 +67,7 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+  let day = days[date.getDay()];
 
   return `${day}, ${hours}:${minutes}`;
 }
@@ -114,4 +114,4 @@ function formatDay(timestamp) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearch);
 
-search("Paris");
+search("New York");
