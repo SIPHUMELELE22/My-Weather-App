@@ -127,6 +127,7 @@ h3 {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 5px;
+  margin: 5px 0;
   line-height: 1;
 }
 .forecast h3 {
@@ -147,5 +148,4 @@ h3 {
 }
 footer {
   text-align: center;
-  padding-top: 10px;
 }
