@@ -17,25 +17,21 @@ a {
   padding: 30px;
   border-radius: 10px;
 }
-header {
-  border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 30px;
-}
 .search-input {
-  background: #f9f7fe;
-  color: gray;
+  background: rgba(255, 255, 255, 0.2);
+  color: #f9f7fe;
   border: none;
   font-size: 16px;
   padding: 15px;
-  width: 75%;
+  width: 85%;
   border-radius: 25px;
 }
 .search-input::placeholder {
   color: #f9f7fe;
 }
 .search-button {
-  background: #f9f7fe;
-  color: gray;
+  background: rgba(255, 255, 255, 0.2);
+  color: #f9f7fe;
   margin-left: 5px;
   font-size: 16px;
   border: none;
@@ -142,7 +138,7 @@ h3 {
   font-size: 20px;
 }
 .forecast-temperature {
-  color: dedee0;
+  color: #dedee0;
   font-size: 16px;
 }
 .forecast-temperature strong {
